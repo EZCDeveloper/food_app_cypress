@@ -1,0 +1,15 @@
+node_modules
+cypress/fixtures/example.json
+cypress/integration/examples
+cypress.env.json
+
+/cypress/videos
+/cypress/screenshots
+./cypress/downloads/*
+./cypress/reports/*
+.vscode
+.idea
+.npmrc
+/.lh
+/.env
+/LoadTest/fixtures/credentials.js
