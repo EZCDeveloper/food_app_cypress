@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+        "cy:run": "npx cypress run",
+        "cy:run:e2e": "npx cypress run --headless --browser chrome --spec '**/e2e/**'",
+        "cy:run:regression": "npx cypress run --headless --browser chrome --spec '**/e2e/regression/**'",
+        "cy:run:smoke": "npx cypress run --headless --browser chrome --spec '**/e2e/smoke/**'",
+        "cy:run:ui": "npx cypress run --headless --browser chrome --spec '**/e2e/ui/**'"
   },
   "author": "Emanuel Zini",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.2",
+    "typescript": "^5.4.4"
+  }
 }
